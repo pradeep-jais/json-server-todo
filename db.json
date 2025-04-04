@@ -1,0 +1,20 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "todo": "create json server project"
+    },
+    {
+      "id": 2,
+      "todo": "Get data from server"
+    },
+    {
+      "id": 3,
+      "todo": "Populate todos"
+    },
+    {
+      "id": 4,
+      "todo": "get single item using id"
+    }
+  ]
+}
