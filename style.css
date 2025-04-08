@@ -25,17 +25,29 @@ li {
 .todo {
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
   background: gainsboro;
   text-transform: capitalize;
-  font-size: 1.5rem;
+  text-align: left;
+  font-size: 1rem;
   border-radius: 0.25rem;
   padding: 0.25rem 1rem;
 }
 .remove-btn {
-  width: 1.8rem;
+  background: whitesmoke;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  place-items: center;
+  padding: 4px;
   border: none;
   border-radius: 0.25rem;
   cursor: pointer;
+}
+.remove-btn svg {
+  width: 1.5rem;
+  fill: red;
 }
 
 /* 
@@ -69,9 +81,10 @@ add task field
   color: #b9b9b9;
   text-transform: capitalize;
 }
-.add-task {
+.add-task-btn {
+  width: 105px;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   gap: 0.5rem;
   padding: 0.4rem 0.8rem;
   text-transform: capitalize;
@@ -81,9 +94,22 @@ add task field
   border: none;
   cursor: pointer;
 }
-.add-task i {
+.add-task-btn i {
   color: magenta;
 }
-.add-task:hover {
+.add-task-btn:hover {
   background: rgb(55, 55, 55);
+}
+.loading-btn svg {
+  width: 1rem;
+  fill: red;
+  animation: spinner 1s linear infinite;
+}
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

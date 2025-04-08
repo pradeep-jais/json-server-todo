@@ -1,20 +1,28 @@
 {
   "todos": [
     {
-      "id": 1744108170590,
-      "todo": "hu"
+      "id": 1,
+      "todo": "create json server project"
     },
     {
-      "id": 1744108179930,
-      "todo": "g"
+      "id": 2,
+      "todo": "Get data from server"
     },
     {
-      "id": 1744108185824,
-      "todo": "d"
+      "id": 3,
+      "todo": "Populate todos"
     },
     {
-      "id": 1744108210757,
-      "todo": "A"
+      "id": 4,
+      "todo": "get single item using id"
+    },
+    {
+      "id": 5,
+      "todo": "Add nice UI and function to add new todo"
+    },
+    {
+      "id": 6,
+      "todo": "optimize performance, avoid unnecessary api call, improved user experience UX by indicating action feedback"
     }
   ]
 }
