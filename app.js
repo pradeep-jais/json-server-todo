@@ -5,7 +5,6 @@ const addTaskBtn = document.querySelector('.add-task');
 const todosContainer = document.querySelector('.todos');
 
 const getTodos = async () => {
-  todosContainer.innerHTML = "<p style='padding:2rem;'>Loading...</p>";
   try {
     const res = await fetch('http://localhost:3000/todos');
     const data = await res.json();
@@ -53,18 +52,18 @@ const deleteItem = async (id) => {
     });
 
     const data = await res.json();
-    console.log(data);
+    // console.log(data);
   } catch (error) {
     console.log(error);
   }
 };
 
-todosContainer.addEventListener('click', (e) => {
+todosContainer.addEventListener('click', async (e) => {
   const btn = e.target;
   if (btn.classList.contains('remove-btn')) {
     const id = btn.parentElement.dataset.id;
-    deleteItem(id);
-    getTodos();
+    await deleteItem(id);
+    await getTodos();
   }
 });
 
