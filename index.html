@@ -5,11 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Json server app</title>
 
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1>Json server app</h1>
     <ul class="todos"></ul>
+    <form class="add-task-field">
+      <input type="text" class="input-task" placeholder="add new task" />
+      <button class="add-task" type="submit">
+        <i class="fa-solid fa-circle-plus"></i> add task
+      </button>
+    </form>
 
     <script src="app.js"></script>
   </body>
