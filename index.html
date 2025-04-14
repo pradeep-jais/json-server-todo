@@ -16,14 +16,42 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Json server app</h1>
-    <ul class="todos"></ul>
-    <form class="add-task-field">
-      <input type="text" class="input-task" placeholder="add new task" />
-      <button class="add-task-btn" type="submit">
-        <i class="fa-solid fa-circle-plus"></i> add task
-      </button>
-    </form>
+    <section class="todo-app">
+      <h1>Json server app</h1>
+      <div class="section-center">
+        <div class="config-api-container">
+          <button class="api-setting-btn">
+            <i class="fa-solid fa-gears"></i>
+          </button>
+          <div class="config-api">
+            <h4>
+              <i class="fa-solid fa-screwdriver-wrench"></i>Configure server
+            </h4>
+            <p>
+              Local json server won't work for the published app. <br />
+              Configure different server options to utilize this TODO app.
+            </p>
+            <h5>choose a server</h5>
+            <div class="btn-container">
+              <button data-api="local" class="btn">local server</button>
+              <button data-api="typecode-demo" class="btn">
+                typecode demo api
+              </button>
+              <button data-api="github-repo" class="btn">
+                github repo @typecode
+              </button>
+            </div>
+          </div>
+        </div>
+        <ul class="todos"></ul>
+        <form class="add-task-field">
+          <input type="text" class="input-task" placeholder="add new task" />
+          <button class="add-task-btn" type="submit">
+            <i class="fa-solid fa-circle-plus"></i> add task
+          </button>
+        </form>
+      </div>
+    </section>
 
     <script src="app.js"></script>
   </body>

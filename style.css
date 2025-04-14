@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+.section-center {
+  max-width: 678px;
+  margin: 0 auto;
+}
 body {
   text-align: center;
   padding: 0 1rem;
@@ -48,6 +52,12 @@ li {
 .remove-btn svg {
   width: 1.5rem;
   fill: red;
+}
+.no-todo {
+  padding: 1rem;
+}
+.no-todo p {
+  color: gray;
 }
 
 /* 
@@ -112,4 +122,87 @@ add task field
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Configure api */
+.config-api-container {
+  /* border: 1px solid red; */
+  min-height: 4rem;
+  position: relative;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+.config-api {
+  /* border: 1px solid red; */
+  background: rgb(238, 237, 237);
+  text-align: left;
+  padding: 1.5rem 1rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  transform: scale(0);
+  transform-origin: right top;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease;
+  border-radius: 2px;
+}
+.config-api-container.is-open .config-api {
+  transform: scale(1);
+  opacity: 1;
+  visibility: visible;
+}
+.config-api-container.is-open {
+  min-height: 12.5rem;
+}
+
+.btn {
+  background: blueviolet;
+  color: #fff;
+  padding: 0.4rem 1rem;
+  border: transparent;
+  border-radius: 0.25rem;
+  box-shadow: 2px 4px 15px rgba(137, 43, 226, 0.518);
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background: rgb(75, 1, 143);
+  box-shadow: 2px 4px 20px rgba(137, 43, 226, 0.518);
+}
+.btn-container .btn {
+  margin-right: 0.75rem;
+}
+.config-api i {
+  margin-right: 1rem;
+}
+h4 {
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+h5 {
+  font-size: 1rem;
+  text-transform: capitalize;
+  margin-bottom: 0.8rem;
+}
+.config-api p {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.25rem;
+}
+.api-setting-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: gainsboro;
+  font-size: 1.2rem;
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  z-index: 100;
 }
